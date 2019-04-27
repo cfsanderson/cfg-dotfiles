@@ -248,7 +248,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAc7Gdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAdKGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -267,13 +267,71 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>268 335 796 486 0 0 1440 877 </string>
+	<string>268 369 796 486 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2 0 1438 877 0 0 1440 877 </string>
+	<string>1 -1 1438 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 10</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 11</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 12</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 13</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 14</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 15</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 16</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 17</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 18</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 19</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>637 0 1438 877 0 0 1440 877 </string>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 20</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 21</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 22</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 23</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 24</key>
+	<string>26 -163 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 25</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 26</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 27</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 28</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 29</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 30</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 31</key>
+	<string>2 23 1438 854 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 6</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 7</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 8</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 9</key>
+	<string>2 0 1438 877 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1071,16 +1129,12 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12941176470588237</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>0.12941177189350128</real>
 				<key>Green Component</key>
-				<real>0.12156862745098039</real>
+				<real>0.12156862765550613</real>
 				<key>Red Component</key>
-				<real>0.11372549019607843</real>
+				<real>0.11372549086809158</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -1163,16 +1217,12 @@
 			<false/>
 			<key>Foreground Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.81960784313725488</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>0.77647058823529413</real>
 				<key>Green Component</key>
-				<real>0.82352941176470584</real>
+				<real>0.78431372549019607</real>
 				<key>Red Component</key>
-				<real>0.81568627450980391</real>
+				<real>0.77254901960784317</real>
 			</dict>
 			<key>Guid</key>
 			<string>3C2B7F2C-E36A-4AE4-B372-77B3F77A8143</string>
@@ -1617,13 +1667,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-02-10T10:54:14Z</date>
+	<date>2019-04-13T03:40:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.2.7</string>
+	<string>3.2.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

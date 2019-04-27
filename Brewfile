@@ -21,7 +21,6 @@ brew "imagemagick"
 brew "libksba"
 brew "libyaml"
 brew "luarocks"
-brew "macvim"
 brew "mapnik"
 brew "mas"
 brew "mongodb"
@@ -30,6 +29,7 @@ brew "neovim"
 brew "ninja"
 brew "nmap"
 brew "openssl@1.1"
+brew "perl"
 brew "pkg-config"
 brew "postgresql", restart_service: true
 brew "postgis"
@@ -41,7 +41,7 @@ brew "tidy-html5"
 brew "tldr"
 brew "trash-cli"
 brew "tree"
-brew "vim", link: false
+brew "vim"
 brew "yarn"
 brew "youtube-dl"
 brew "z"
@@ -59,11 +59,11 @@ cask "slack"
 cask "sonic-pi"
 cask "spotify"
 cask "visual-studio-code"
-mas "Alfred", id: 405843582
-mas "Amphetamine", id: 937984704
-mas "Boom 2", id: 948176063
-mas "GIPHY CAPTURE", id: 668208984
-mas "iA Writer", id: 775737590
-mas "Kindle", id: 405399194
-mas "Pages", id: 409201541
-mas "Xcode", id: 497799835
+mas "", id: 405399194
+mas "", id: 937984704
+mas "", id: 668208984
+mas "", id: 948176063
+mas "", id: 497799835
+mas "", id: 775737590
+mas "", id: 409201541
+mas "", id: 405843582

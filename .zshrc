@@ -10,27 +10,21 @@ ZSH_THEME=amuse
 
 #====================    STUFF    ====================
 ENABLE_CORRECTION="false"
-
 COMPLETION_WAITING_DOTS="true"
-
 # optional formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
 
-
-#====================  PLUGINS  ====================
+#====================   PLUGINS   ====================
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(git brew chucknorris npm osx rand-quote web-search)
 
-
-#====================  ALIASES  ====================
+#====================    SOURCE   ====================
 
 source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
-
 #====================  SSH  ====================
 export SSH_KEY_PATH="~/.ssh/id_rsa"
-
 
 # #====================  ALIASES  ====================
 alias bbd='brew bundle dump -f'
@@ -58,16 +52,7 @@ alias tp='trash-put'
 alias gohome='~ && ls -la'
 alias notes='cd ~/Projects/NOTES && code .'
 
-#====================    NVM    ====================
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#=================== ASDF ==================
 
-
-#====================    RBENV    ====================
-eval "$(rbenv init -)"
-
-
-#====================    TODOOZ    ====================
-# TODO - Move aliases to ZSH_CUSTOM folder ???
-# TODO - Move plugins to ~/.oh-my-zsh/custom/plugins/ ???
+. /usr/local/opt/asdf/asdf.sh
+. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash

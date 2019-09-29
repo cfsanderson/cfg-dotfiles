@@ -30,7 +30,6 @@ brew "libxslt"
 brew "luarocks"
 brew "mapnik"
 brew "mas"
-brew "mongodb"
 brew "mysql"
 brew "neovim"
 brew "ninja"
@@ -61,6 +60,7 @@ cask "firefox"
 cask "google-chrome"
 cask "iterm2"
 cask "mamp"
+cask "postgres"
 cask "slack"
 cask "sonic-pi"
 cask "spotify"
@@ -69,6 +69,7 @@ mas "Alfred", id: 405843582
 mas "Boom 2", id: 948176063
 mas "GIPHY CAPTURE", id: 668208984
 mas "iA Writer", id: 775737590
+mas "iMovie", id: 408981434
 mas "Kindle", id: 405399194
 mas "Pages", id: 409201541
 mas "Xcode", id: 497799835

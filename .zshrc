@@ -1,7 +1,7 @@
 #=====================================================
 #============    @cfsanderson .zshrc   ===============
 #=====================================================
-export ZSH=/Users/caleb/.oh-my-zsh
+export ZSH=/Users/calebsanderson/.oh-my-zsh
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
@@ -30,12 +30,13 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 alias bbd='brew bundle dump -f'
 alias be='bundle exec'
 alias c='clear'
-alias cfg='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
+alias cfg='/usr/bin/git --git-dir=/Users/calebsanderson/.cfg-dotfiles/ --work-tree=/Users/calebsanderson'
 alias cfgloga='cfg log --oneline --decorate --graph --all'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
-alias imagemin="node ~/Scripts/imagemin.js"
 alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='bundle exec jekyll serve --watch --config _config_dev.yml'
+alias l='ls -la'
+alias lsa='ls -a'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
 alias st='speedtest'
@@ -47,7 +48,6 @@ touch_open() {
 	fi
 	: > "$1" && open "$1"
 }
-alias lsa='ls -a'
 alias tp='trash-put'
 alias gohome='~ && ls -la'
 alias notes='cd ~/Projects/NOTES && code .'

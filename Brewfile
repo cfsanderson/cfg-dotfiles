@@ -62,5 +62,6 @@ mas "Boom 2", id: 948176063
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
 mas "Kindle", id: 405399194
+mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Xcode", id: 497799835

@@ -58,6 +58,7 @@ cask "iterm2"
 cask "postgres"
 cask "slack"
 cask "visual-studio-code"
+mas "Airmail", id: 918858936
 mas "Boom 2", id: 948176063
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434

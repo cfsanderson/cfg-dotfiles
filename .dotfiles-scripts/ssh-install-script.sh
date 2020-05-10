@@ -10,7 +10,7 @@ echo ""
 echo ""
 echo "===== Next: Fix all those settings! ====="
 
-ssh-keygen -t rsa -b 4096 -C "calebsanderson@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "calebsanderson@icloud.com"
 
 eval "$(ssh-agent -s)"
 

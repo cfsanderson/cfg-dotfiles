@@ -26,7 +26,7 @@ source $ZSH/oh-my-zsh.sh
 #====================  SSH  ====================
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-# #====================  ALIASES  ====================
+#====================  ALIASES  ====================
 alias bbd='brew bundle dump -f'
 alias be='bundle exec'
 alias c='clear'

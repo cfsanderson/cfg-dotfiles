@@ -18,7 +18,6 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
 
-"Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
@@ -32,14 +31,12 @@ Plug 'sainnhe/gruvbox-material'
 
 call plug#end()
 
-" important!!
 if has('termguicolors')
   set termguicolors
 endif
 
 set background=dark
 
-" set contrast
 let g:gruvbox_material_background = 'hard'
 
 colorscheme gruvbox-material

@@ -12,7 +12,7 @@ brew "openssl@1.1"
 brew "readline"
 brew "unixodbc"
 brew "asdf"
-brew "gettext"
+brew "gettext", link: false
 brew "sqlite"
 brew "python"
 brew "cmake"

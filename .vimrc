@@ -1,13 +1,14 @@
 syntax on
 
-set belloff=all
-set colorcolumn=80
-set incsearch
+set belloff=all                         "turn off all the bells
+set colorcolumn=80                      "set the 80th char column color
+set incsearch                           "include search
+set list
 set nobackup
 set noerrorbells
-set noswapfile
-set nu
-set scrolloff=5
+set noswapfile                          "no swap files
+set nu                                  "numbered lines
+set scrolloff=5                         "keep cursor 5 lines from bottom or top when scrolling
 set shiftwidth=4
 set smartindent
 set smartcase
@@ -44,7 +45,7 @@ colorscheme gruvbox-material
 set background=dark
 
 " open the preview window after entering the markdown buffer
-let g:mkdp_auto_start = 1
+let g:mkdp_auto_start = 0
 let g:airline_theme = 'gruvbox_material'
 
 map <C-n> :NERDTreeToggle<CR>

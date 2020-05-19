@@ -1,0 +1,3 @@
+[submodule "gruvbox-material"]
+	path = gruvbox-material
+	url = /Users/calebsanderson/.vim/unmanaged-plugins/gruvbox-material

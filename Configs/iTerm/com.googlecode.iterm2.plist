@@ -645,9 +645,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 877 0 0 1440 900 </string>
+	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 1440 900 0 0 1440 900 </string>
+	<string>0 0 1920 1057 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -753,13 +753,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73615530598908663</real>
+				<real>0.63921568627450975</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.88373586805537341</real>
+				<real>0.77647058823529413</real>
 				<key>Red Component</key>
-				<real>0.96917724609375</real>
+				<real>0.86274509803921573</real>
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
@@ -982,13 +982,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73333333333333328</real>
+				<real>0.7803921568627451</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.88235294117647056</real>
+				<real>0.84313725490196079</real>
 				<key>Red Component</key>
-				<real>0.96862745098039216</real>
+				<real>0.88235294117647056</real>
 			</dict>
 			<key>Guid</key>
 			<string>F94567C4-EB55-41E5-98F0-9F075C2129F4</string>
@@ -1373,13 +1373,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.55294120311737061</real>
+				<real>0.63921568627450975</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.69411766529083252</real>
+				<real>0.77647058823529413</real>
 				<key>Red Component</key>
-				<real>0.77254903316497803</real>
+				<real>0.86274509803921573</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -4551,12 +4551,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{70, 712}</string>
+		<string>{30, 718}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>4EC5D2D3-B7BC-4A9E-B758-A524BC973220</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>98</integer>
+	<integer>103</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5275,6 +5275,8 @@
 	</dict>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>593767484.81152499</real>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -5310,6 +5312,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/calebsanderson/Configs/iTerm</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
@@ -5321,7 +5325,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-16T17:42:32Z</date>
+	<date>2020-05-18T18:03:56Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>

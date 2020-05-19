@@ -22,7 +22,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'git@github.com:Valloric/YouCompleteMe.git'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 Plug 'leafgarland/typescript-vim'
-Plug 'sainnhe/gruvbox-material'
+Plug '~/.vim/unmanaged-plugins/gruvbox-material'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sensible'
@@ -34,6 +34,7 @@ syntax enable
 if has('termguicolors')
   set termguicolors
 endif
+
 let g:gruvbox_material_background = 'hard'
 let g:gruvbox_material_enable_italic = 1
 let g:gruvbox_material_disable_italic_comment = 0
@@ -49,3 +50,7 @@ let g:mkdp_auto_start = 0
 let g:airline_theme = 'gruvbox_material'
 
 map <C-n> :NERDTreeToggle<CR>
+
+"remap normal copy/paste keys to vim registers
+vnoremap <C-c> "+y
+noremap <C-v> "+P

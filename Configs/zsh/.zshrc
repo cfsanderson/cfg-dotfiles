@@ -6,41 +6,32 @@ export PATH="/usr/local/sbin:$PATH"
 export ZSH=/Users/calebsanderson/.oh-my-zsh
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-#====================         THEME & Colors
 ZSH_THEME=amuse
 
-# Enable colors and change prompt:
-#autoload -U colors && colors	# Load colors
-#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 setopt autocd		# Automatically cd into typed directory.
 setopt noclobber    # Prevents overwriting files. If intended use `cat file.txt >! overwrite.txt`
 
-#====================         AUTOCOMPLETE
-#autoload -U compinit
-#zstyle ':completion:*' menu select
-#zmodload zsh/complist
-#compinit
-#_comp_options+=(globdots)       # Includes hidden files
 ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
 
-#====================         HISTORY
 HIST_STAMPS="yyyy-mm-dd"
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
-#====================         PLUGINS
-plugins=(git npm osx web-search zsh-syntax-highlighting)
+plugins=(
+    git 
+    npm 
+    osx 
+    web-search 
+    zsh-syntax-highlighting
+)
 
-#====================         SOURCE
 source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
-#====================         SSH
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-#====================         ALIASES
 alias bbd='brew bundle dump -f'
 alias be='bundle exec'
 alias c='clear'
@@ -70,6 +61,6 @@ alias tp='trash-put'
 alias vimrc='vim ~/.vimrc'
 alias zshrc='vim ~/Configs/zsh/.zshrc'
 
-#====================         ASDF
+# ASDF
 . /usr/local/opt/asdf/asdf.sh
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash

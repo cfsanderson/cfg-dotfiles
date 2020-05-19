@@ -4,4 +4,4 @@
 export EDITOR="vim"
 export BROWSER="firefox"
 
-export ZDOTDIR="$HOME/.config/zsh"
+export ZDOTDIR="$HOME/Configs/zsh"

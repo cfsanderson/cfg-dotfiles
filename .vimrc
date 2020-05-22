@@ -8,20 +8,27 @@ set noerrorbells
 set noswapfile                          "no swap files
 set nu                                  "numbered lines
 set number relativenumber               "shows currrent line number and others relative from it up and down.
-set scrolloff=5                         "keep cursor 5 lines from bottom or top when scrolling
 set shiftwidth=4
 set smartindent
 set smartcase
 set tabstop=4 softtabstop=4 expandtab
 set undodir=~/.vim/undodir
 set undofile
-"set colorcolumn=80                      "set the 80th char column color
+set colorcolumn=80                      "set the 80th char column color
 
 highlight Comment cterm=italic
 
+"NERDTREE
+"" Open NerdTree by default
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+" Automatically close a tab if NerdTree is the last thing running
+"autocmd bufenter * if (winnr(“$”) == 1 && exists(“b:NERDTreeType”) && b:NERDTreeType == “primary”) | q | endif
+" NERDTree
+let NERDTreeQuitOnOpen = 1
+let NERDTreeMinimaUI = 1
+let NERDTreeDirArrows = 1
 
 call plug#begin('~/.vim/plugged')
 
@@ -53,9 +60,10 @@ let g:gruvbox_material_sign_column_background = 'none'
 colorscheme gruvbox-material
 set background=dark
 
-" open the preview window after entering the markdown buffer
-let g:mkdp_auto_start = 0
-let g:mkdp_markdown_css = '~/Configs/zsh/markdown9.css'
+
+" Markdown Preview
+let g:mkdp_auto_start = 0 " open the preview window after entering the markdown buffer
+let g:mkdp_refresh_slow = 1 " refresh only when exiting input mode or saving the file
 
 let g:airline_theme = 'gruvbox_material'
 

@@ -1,6 +1,13 @@
-#===============================================================================
-#====================         cfsanderson                  =====================
-#===============================================================================
+#01100011 01100110 01110011 01100001 01101110 01100100 01100101 01110010 01110011 01101111 01101110
+#                           __                     _
+#                          / _|                   | |
+#                      ___| |_ ___  __ _ _ __   __| | ___ _ __ ___  ___  _ __
+#                     / __|  _/ __|/ _` | '_ \ / _` |/ _ \ '__/ __|/ _ \| '_ \
+#                    | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | |
+#                     \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
+#
+#
+#01100011 01100110 01110011 01100001 01101110 01100100 01100101 01110010 01110011 01101111 01101110
 
 export PATH="/usr/local/sbin:$PATH"
 export ZSH=/Users/calebsanderson/.oh-my-zsh
@@ -8,8 +15,8 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 ZSH_THEME=amuse
 
-setopt autocd		# Automatically cd into typed directory.
-setopt noclobber    # Prevents overwriting files. If intended use `cat file.txt >! overwrite.txt`
+setopt autocd
+setopt noclobber
 
 ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
@@ -45,8 +52,9 @@ alias gohome='~ && ls -la'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias l='ls -la'
 alias lsl='ls -l'
+alias mybucket='open https://bitbucket.org/calebsanderson/'
 alias myhub='open https://github.com/cfsanderson'
-alias notes='cd ~/Projects/NOTES && vim .'
+alias notes='cd ~/Projects/.notes && vim .'
 alias codenotes='cd ~/Projects/NOTES && code .'
 alias projects='cd ~/Projects && code .'
 alias sasswatch='sass --watch scss:css --style compressed'
@@ -59,7 +67,7 @@ touch_open() {
 		echo "need a file!" >&2
 		return 1
 	fi
-	: > "$1" && open "$1"
+	: > "$1" && vim "$1"
 }
 alias tp='trash-put'
 alias vimrc='vim ~/.vimrc'

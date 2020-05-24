@@ -72,8 +72,9 @@ let g:airline_theme = 'gruvbox_material'
 " REMAPS
 let mapleader = "\<Space>"
 
-" save file (:w)
+" save & quit
 noremap <leader>w :w<cr>
+noremap <leader>q :q<cr>
 
 " toggle NERDTree
 map <leader>n :NERDTreeToggle<cr>

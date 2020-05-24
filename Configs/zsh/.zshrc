@@ -1,14 +1,10 @@
-#01100011 01100110 01110011 01100001 01101110 01100100 01100101 01110010 01110011 01101111 01101110
-#                           __                     _
-#                          / _|                   | |
-#                      ___| |_ ___  __ _ _ __   __| | ___ _ __ ___  ___  _ __
-#                     / __|  _/ __|/ _` | '_ \ / _` |/ _ \ '__/ __|/ _ \| '_ \
-#                    | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | |
-#                     \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
-#
-#
-#01100011 01100110 01110011 01100001 01101110 01100100 01100101 01110010 01110011 01101111 01101110
-
+#===============================================================================
+#                / _|                   | |
+#            ___| |_ ___  __ _ _ __   __| | ___ _ __ ___  ___  _ __
+#           / __|  _/ __|/ _` | '_ \ / _` |/ _ \ '__/ __|/ _ \| '_ \
+#          | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | |
+#           \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
+#===============================================================================
 export PATH="/usr/local/sbin:$PATH"
 export ZSH=/Users/calebsanderson/.oh-my-zsh
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -46,6 +42,8 @@ alias conf='/usr/bin/git --git-dir=/Users/calebsanderson/.cfg-dotfiles/ --work-t
 alias confstat='conf status'
 alias conflog='conf log'
 alias confloga='conf log --oneline --decorate --graph --all'
+alias curlcfsvimrc='curl -Lks https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.vimrc > .cfs_vimrc'
+alias curlsnivimrc='curl -Lks https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles-work/master/.vimrc > .sni_vimrc'
 alias darkdown='cd ~/.vim/plugged/markdown-preview.nvim/ && gco darkdown && cd -'
 alias barkdown='cd ~/.vim/plugged/markdown-preview.nvim/ && gco master && cd -'
 alias gohome='~ && ls -la'

@@ -9,25 +9,30 @@
 syntax on
 
 set belloff=all
+set display+=lastline
 set incsearch
-set list
+set laststatus=2
 set nobackup
 set noerrorbells
 set noswapfile
 set nu
 set number relativenumber
+set scrolloff=5
+set sidescrolloff=5
 set shiftwidth=4
 set smartindent
 set smartcase
+set splitbelow
+set splitright
 set tabstop=4 softtabstop=4 expandtab
 set undodir=~/.vim/undodir
-set undofile
+set wildmenu
 
 highlight Comment cterm=italic
 
 " NERDTREE
 autocmd StdinReadPre * let s:std_in=1
-" Open NERDTree by default when vim starts up if no files specified
+"w Open NERDTree by default when vim starts up if no files specified
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Automatically close a tab if NerdTree is the last thing running
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -36,13 +41,14 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'git@github.com:Valloric/YouCompleteMe.git'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'leafgarland/typescript-vim'
 Plug '~/.vim/unmanaged-plugins/gruvbox-material'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
-Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
@@ -79,6 +85,9 @@ noremap <leader>q :q<cr>
 " toggle NERDTree
 map <leader>n :NERDTreeToggle<cr>
 
+" open FZF
+map <leader>f :FZF
+
 " using * to search or visual selection this enters the replace command and
 " puts your cursor in line to accept the term to replace
 nnoremap <leader>r :%s///g<left><left>
@@ -87,6 +96,12 @@ nnoremap <leader>rc :%s///gc<left><left>
 " source current file
 nnoremap <leader>so :source %<cr>
 
-"remap normal copy/paste keys to vim registers
-vnoremap <leader>c "+y
-noremap <leader>p "+P
+" remap normal copy/paste keys to vim registers
+vnoremap <C-c> "+y
+noremap <C-p> "+p
+
+" remap change split to just ctrl + {h,j,k,l}
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l

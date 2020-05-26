@@ -24,7 +24,7 @@ set smartindent
 set smartcase
 set splitbelow
 set splitright
-set tabstop=4 softtabstop=4 expandtab
+set tabstop=2 softtabstop=2 expandtab
 set undodir=~/.vim/undodir
 set wildmenu
 
@@ -39,7 +39,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'git@github.com:Valloric/YouCompleteMe.git'
+Plug 'Valloric/YouCompleteMe'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -49,6 +49,7 @@ Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
+Plug '~/.vim/unmanaged-plugins/vim-javascript'
 
 call plug#end()
 
@@ -101,7 +102,7 @@ vnoremap <C-c> "+y
 noremap <C-p> "+p
 
 " remap change split to just ctrl + {h,j,k,l}
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+vnoremap <C-j> <C-w>j
+vnoremap <C-k> <C-w>k
+vnoremap <C-h> <C-w>h
+vnoremap <C-l> <C-w>l

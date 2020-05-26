@@ -102,7 +102,7 @@ vnoremap <C-c> "+y
 noremap <C-p> "+p
 
 " remap change split to just ctrl + {h,j,k,l}
-vnoremap <C-j> <C-w>j
-vnoremap <C-k> <C-w>k
-vnoremap <C-h> <C-w>h
-vnoremap <C-l> <C-w>l
+map <C-H> :wincmd h<CR>
+map <C-J> :wincmd j<CR>
+map <C-K> :wincmd k<CR>
+map <C-L> :wincmd l<CR>

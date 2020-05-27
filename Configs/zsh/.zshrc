@@ -5,6 +5,7 @@
 #          | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | |
 #           \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
 #===============================================================================
+
 export PATH="/usr/local/sbin:$PATH"
 export ZSH=/Users/calebsanderson/.oh-my-zsh
 fpath=(/usr/local/share/zsh-completions $fpath)

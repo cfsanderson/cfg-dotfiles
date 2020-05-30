@@ -2,6 +2,5 @@
 
 # Default programs:
 export EDITOR="vim"
-export BROWSER="firefox"
 
 export ZDOTDIR="$HOME/Configs/zsh"

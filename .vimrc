@@ -15,7 +15,7 @@ set laststatus=2
 set nobackup
 set noerrorbells
 set noswapfile
-set nu
+set nowrap
 set number relativenumber
 set scrolloff=5
 set sidescrolloff=5

@@ -11,7 +11,6 @@ syntax on
 set belloff=all
 set display+=lastline
 set incsearch
-set laststatus=2
 set nobackup
 set noerrorbells
 set noswapfile
@@ -19,14 +18,13 @@ set nowrap
 set number relativenumber
 set scrolloff=5
 set sidescrolloff=5
-set shiftwidth=4
+set shiftwidth=2
 set smartindent
 set smartcase
 set splitbelow
 set splitright
 set tabstop=2 softtabstop=2 expandtab
 set undodir=~/.vim/undodir
-set wildmenu
 
 highlight Comment cterm=italic
 

@@ -33,7 +33,7 @@ autocmd StdinReadPre * let s:std_in=1
 "w Open NERDTree by default when vim starts up if no files specified
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Automatically close a tab if NerdTree is the last thing running
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 call plug#begin('~/.vim/plugged')
 
@@ -45,6 +45,7 @@ Plug 'leafgarland/typescript-vim'
 Plug '~/.vim/unmanaged-plugins/gruvbox-material'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug '~/.vim/unmanaged-plugins/vim-javascript'
@@ -100,7 +101,7 @@ vnoremap <C-c> "+y
 noremap <C-p> "+p
 
 " remap change split to just ctrl + {h,j,k,l}
-map <C-H> :wincmd h<CR>
-map <C-J> :wincmd j<CR>
-map <C-K> :wincmd k<CR>
-map <C-L> :wincmd l<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>

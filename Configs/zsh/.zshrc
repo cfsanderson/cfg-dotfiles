@@ -69,6 +69,7 @@ touch_open() {
 	: > "$1" && vim "$1"
 }
 alias tp='trash-put'
+alias vimia='cd /Users/calebsanderson/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && vim .'
 alias vimrc='vim ~/.vimrc'
 alias zshrc='vim ~/Configs/zsh/.zshrc'
 

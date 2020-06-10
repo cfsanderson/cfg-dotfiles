@@ -71,7 +71,7 @@ set background=dark
 " Markdown Preview
 let g:mkdp_auto_start = 0
 let g:mkdp_refresh_slow = 1
-let g:mkdp_browser = 'firefox'
+let g:mkdp_browser = 'Brave Browser'
 
 let g:airline_theme = 'gruvbox_material'
 

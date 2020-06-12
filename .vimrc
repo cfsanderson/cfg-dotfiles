@@ -25,6 +25,7 @@ set splitbelow
 set splitright
 set tabstop=2 softtabstop=2 expandtab
 set undodir=~/.vim/undodir
+set undofile
 
 highlight Comment cterm=italic
 
@@ -70,10 +71,33 @@ set background=dark
 
 " Markdown Preview
 let g:mkdp_auto_start = 0
-let g:mkdp_refresh_slow = 1
+let g:mkdp_refresh_slow = 0
 let g:mkdp_browser = 'Brave Browser'
 
 let g:airline_theme = 'gruvbox_material'
+
+" Goyo settings
+let g:goyo_width = 120
+function! s:goyo_enter()
+  set wrap
+  set linebreak
+  set noshowmode
+  set noshowcmd
+  set scrolloff=999
+  execute "MarkdownPreview"
+endfunction
+
+function! s:goyo_leave()
+  set nowrap
+  set nolinebreak
+  set showmode
+  set showcmd
+  set scrolloff=5
+  execute "MarkdownPreviewStop"
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " REMAPS
 let mapleader = "\<Space>"

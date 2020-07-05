@@ -39,6 +39,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-commentary'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -102,6 +103,11 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " REMAPS
 let mapleader = "\<Space>"
+
+" make return and shift+return open  up new lines above and below respectively
+" without going into insert mode.
+nmap <C-o> O<Esc>
+nmap <CR> o<Esc>
 
 " save & quit
 noremap <leader>w :w<cr>

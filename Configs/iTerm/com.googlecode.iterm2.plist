@@ -779,9 +779,9 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>320 321 799 448 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 363 620 392 0 0 1440 877 </string>
+	<string>410 381 620 392 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 877 0 0 1440 877 </string>
+	<string>0 0 1440 877 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -5820,7 +5820,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>4EC5D2D3-B7BC-4A9E-B758-A524BC973220</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>160</integer>
+	<integer>169</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6588,6 +6588,8 @@
 	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -6597,7 +6599,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-13T01:26:49Z</date>
+	<date>2020-07-02T20:21:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -6607,7 +6609,7 @@
 	<key>SeparateStatusBarsPerPane</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>

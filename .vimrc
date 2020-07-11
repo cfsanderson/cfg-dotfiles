@@ -34,7 +34,6 @@ autocmd StdinReadPre * let s:std_in=1
 "w Open NERDTree by default when vim starts up if no files specified
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Automatically close a tab if NerdTree is the last thing running
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 call plug#begin('~/.vim/plugged')
 

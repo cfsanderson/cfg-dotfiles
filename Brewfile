@@ -15,10 +15,10 @@ brew "asdf"
 brew "gettext"
 brew "sqlite"
 brew "xz"
+brew "python@3.8"
 brew "cmake"
 brew "cowsay"
 brew "curl"
-brew "python"
 brew "ffmpeg"
 brew "fortune"
 brew "git"
@@ -69,4 +69,5 @@ mas "iMovie", id: 408981434
 mas "Kindle", id: 405399194
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Theine", id: 955848755
 mas "Xcode", id: 497799835

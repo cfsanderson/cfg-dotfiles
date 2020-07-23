@@ -49,6 +49,7 @@ alias darkdown='cd ~/.vim/plugged/markdown-preview.nvim/ && gco darkdown && cd -
 alias dates='date && TZ=America/Chicago date && TZ=America/Denver date && TZ=America/Los_Angeles date'
 alias barkdown='cd ~/.vim/plugged/markdown-preview.nvim/ && gco master && cd -'
 alias gohome='~ && ls -la'
+alias gs='git switch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias l='ls -la'
 alias lsl='ls -l'

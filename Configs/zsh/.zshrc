@@ -63,6 +63,7 @@ alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
 alias sourcezsh='source ~/Configs/zsh/.zshrc'
 alias st='speedtest'
+alias timez='date “+EST: %H:%M” && TZ=America/Chicago date “+CST: %H:%M” && TZ=America/Denver date “+MST: %H:%M” && TZ=America/Los_Angeles date “+PST: %H:%M”'
 alias to=touch_open
 touch_open() {
 	if ! [ "$1" ]; then

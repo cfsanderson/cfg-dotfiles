@@ -64,10 +64,12 @@ cask "slack"
 cask "visual-studio-code"
 mas "Airmail", id: 918858936
 mas "Boom 2", id: 948176063
+mas "Flow", id: 1423210932
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
 mas "Kindle", id: 405399194
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Pocket", id: 568494494
 mas "Theine", id: 955848755
 mas "Xcode", id: 497799835

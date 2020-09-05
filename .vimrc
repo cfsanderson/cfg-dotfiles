@@ -1,11 +1,3 @@
-"===============================================================================
-"                / _|                   | |
-"            ___| |_ ___  __ _ _ __   __| | ___ _ __ ___  ___  _ __
-"           / __|  _/ __|/ _` | '_ \ / _` |/ _ \ '__/ __|/ _ \| '_ \
-"          | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | |
-"           \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
-"===============================================================================
-
 syntax on
 
 set belloff=all
@@ -42,15 +34,16 @@ Plug 'tpope/vim-commentary'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug '~/.vim/unmanaged-plugins/gruvbox-material'
 Plug '~/.vim/unmanaged-plugins/vim-javascript'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sensible'
 Plug 'leafgarland/typescript-vim'
-Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
@@ -100,6 +93,10 @@ endfunction
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
+" FZF settings
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
+let $FZF_DEFAULT_OPTS='--reverse'
+
 " REMAPS
 let mapleader = "\<Space>"
 
@@ -117,6 +114,7 @@ map <leader>n :NERDTreeToggle<cr>
 
 " open FZF
 map <leader>f :FZF
+nnoremap <C-p> :GFiles<CR>
 
 " using * to search or visual selection this enters the replace command and
 " puts your cursor in line to accept the term to replace

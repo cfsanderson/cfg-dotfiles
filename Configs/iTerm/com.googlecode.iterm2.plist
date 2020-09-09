@@ -582,7 +582,7 @@
 		</dict>
 	</dict>
 	<key>Default Bookmark Guid</key>
-	<string>345B608A-2E65-4623-8FC2-32AEAEC1D558</string>
+	<string>F94567C4-EB55-41E5-98F0-9F075C2129F4</string>
 	<key>DeleteProfile_SilenceUntil</key>
 	<real>615940903.99435103</real>
 	<key>DeleteProfile_selection</key>
@@ -785,7 +785,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 14 1434 863 0 0 1440 900 </string>
+	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -6468,12 +6468,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{270, 703}</string>
+		<string>{318, 795}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>4EC5D2D3-B7BC-4A9E-B758-A524BC973220</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>175</integer>
+	<integer>192</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7252,7 +7252,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-21T01:50:09Z</date>
+	<date>2020-09-05T14:14:53Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>

@@ -35,6 +35,8 @@ source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
 export SSH_KEY_PATH="~/.ssh/id_rsa"
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 alias bbd='brew bundle dump -f'
 alias be='bundle exec'

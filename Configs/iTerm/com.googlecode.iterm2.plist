@@ -582,7 +582,7 @@
 		</dict>
 	</dict>
 	<key>Default Bookmark Guid</key>
-	<string>F94567C4-EB55-41E5-98F0-9F075C2129F4</string>
+	<string>345B608A-2E65-4623-8FC2-32AEAEC1D558</string>
 	<key>DeleteProfile_SilenceUntil</key>
 	<real>615940903.99435103</real>
 	<key>DeleteProfile_selection</key>
@@ -781,11 +781,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>330 177 799 448 0 0 1440 900 </string>
+	<string>3652 510 799 448 2560 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 877 0 0 1440 877 </string>
+	<string>2560 0 2560 1417 2560 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -1033,7 +1033,7 @@
 				<real>0.11372549019607843</real>
 			</dict>
 			<key>Background Image Location</key>
-			<string></string>
+			<string>/Users/calebsanderson/Configs/iTerm/desktop-carbon-fiber-bg_apple.jpeg</string>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -2162,7 +2162,9 @@
 				<real>0.11372549019607843</real>
 			</dict>
 			<key>Background Image Location</key>
-			<string></string>
+			<string>/Users/calebsanderson/Configs/iTerm/desktop-carbon-fiber-bg_apple.jpeg</string>
+			<key>Background Image Mode</key>
+			<integer>2</integer>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -6466,14 +6468,14 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{2560, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{318, 795}</string>
+		<string>{3586, 1036}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>4EC5D2D3-B7BC-4A9E-B758-A524BC973220</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>192</integer>
+	<integer>199</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7252,7 +7254,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-09-05T14:14:53Z</date>
+	<date>2020-09-19T22:09:52Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>

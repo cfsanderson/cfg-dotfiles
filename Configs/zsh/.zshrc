@@ -39,17 +39,11 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 alias bbd='brew bundle dump -f'
-alias be='bundle exec'
 alias c='clear'
 alias conf='/usr/bin/git --git-dir=/Users/calebsanderson/.cfg-dotfiles/ --work-tree=/Users/calebsanderson'
 alias confstat='conf status'
 alias conflog='conf log'
 alias confloga='conf log --oneline --decorate --graph --all'
-alias curlcfsvimrc='curl -Lks https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.vimrc > .cfs_vimrc'
-alias curlsnivimrc='curl -Lks https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles-work/master/.vimrc > .sni_vimrc'
-alias darkdown='cd ~/.vim/plugged/markdown-preview.nvim/ && gco darkdown && cd -'
-alias dates='date && TZ=America/Chicago date && TZ=America/Denver date && TZ=America/Los_Angeles date'
-alias barkdown='cd ~/.vim/plugged/markdown-preview.nvim/ && gco master && cd -'
 alias gohome='~ && ls -la'
 alias gs='git switch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
@@ -57,10 +51,8 @@ alias l='ls -la'
 alias lsl='ls -l'
 alias mybucket='open https://bitbucket.org/calebsanderson/'
 alias myhub='open https://github.com/cfsanderson'
-alias notes='cd ~/Projects/.notes && vim .'
+alias notes='cd ~/Projects/.notes && nvim .'
 alias preview='open -a Preview'
-alias codenotes='cd ~/Projects/NOTES && code .'
-alias projects='cd ~/Projects && code .'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
 alias sourcezsh='source ~/Configs/zsh/.zshrc'
@@ -72,13 +64,12 @@ touch_open() {
 		echo "need a file!" >&2
 		return 1
 	fi
-	: > "$1" && vim "$1"
+	: > "$1" && nvim "$1"
 }
 alias tp='trash-put'
-alias vack='~/.vim/scripts/vack.sh'
-alias vimia='cd /Users/calebsanderson/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && vim .'
-alias vimrc='vim ~/.vimrc'
-alias zshrc='vim ~/Configs/zsh/.zshrc'
+alias vim='nvim'
+alias vimrc='nvim ~/.config/nvim/init.vim'
+alias zshrc='nvim ~/Configs/zsh/.zshrc'
 
 # ASDF
 . /usr/local/opt/asdf/asdf.sh

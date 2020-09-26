@@ -1,3 +1,4 @@
+" switched to nvim and moved config to `.config/nvim/init.vim`
 syntax on
 
 set belloff=all

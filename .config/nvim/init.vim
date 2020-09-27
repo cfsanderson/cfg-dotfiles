@@ -95,7 +95,7 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 augroup highlight_yank
     autocmd!
-    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank('Substitute', 200)
+    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank()
 augroup END
 
 " FZF settings

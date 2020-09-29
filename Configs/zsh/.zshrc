@@ -44,7 +44,7 @@ alias conf='/usr/bin/git --git-dir=/Users/calebsanderson/.cfg-dotfiles/ --work-t
 alias confstat='conf status'
 alias conflog='conf log'
 alias confloga='conf log --oneline --decorate --graph --all'
-alias gohome='~ && ls -la'
+alias home='~ && ls -la'
 alias gs='git switch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias l='ls -la'

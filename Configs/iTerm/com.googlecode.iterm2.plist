@@ -785,7 +785,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 7 1434 862 0 0 1440 877 </string>
+	<string>0 -1 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 -1 1440 877 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -1024,16 +1024,14 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12941176470588237</real>
+				<real>0.07281494140625</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.12156862745098039</real>
+				<real>0.059015472384427725</real>
 				<key>Red Component</key>
-				<real>0.11372549019607843</real>
+				<real>0.045216016471385956</real>
 			</dict>
-			<key>Background Image Location</key>
-			<string>/Users/calebsanderson/Configs/iTerm/desktop-carbon-fiber-bg_apple.jpeg</string>
 			<key>Background Image Mode</key>
 			<integer>2</integer>
 			<key>Badge Color</key>
@@ -7605,14 +7603,14 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{2560, 0}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{2820, 784}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>4EC5D2D3-B7BC-4A9E-B758-A524BC973220</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>217</integer>
+	<integer>220</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -8391,7 +8389,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-11-08T15:37:46Z</date>
+	<date>2020-11-12T19:16:58Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>

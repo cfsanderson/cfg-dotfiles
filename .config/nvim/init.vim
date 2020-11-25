@@ -1,9 +1,26 @@
+"===============================================================================
+"                 ____                     __                         
+"           _____/ __/________ _____  ____/ /__  ______________  ____ 
+"          / ___/ /_/ ___/ __ `/ __ \/ __  / _ \/ ___/ ___/ __ \/ __ \
+"         / /__/ __(__  ) /_/ / / / / /_/ /  __/ /  (__  ) /_/ / / / /
+"         \___/_/ /____/\__,_/_/ /_/\__,_/\___/_/  /____/\____/_/ /_/ 
+"                                                                     
+"                           _       _ __        _         
+"                          (_)___  (_) /__   __(_)___ ___ 
+"                         / / __ \/ / __/ | / / / __ `__ \
+"                        / / / / / / /_ | |/ / / / / / / /
+"                       /_/_/ /_/_/\__/ |___/_/_/ /_/ /_/ 
+"===============================================================================
+
+
+
+source $HOME/.config/nvim/plug-config/coc.vim
+
 syntax on
 
 set belloff=all
 set display+=lastline
 set incsearch
-set nobackup
 set noerrorbells
 set noswapfile
 set nowrap
@@ -34,6 +51,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
@@ -99,6 +117,22 @@ let g:gruvbox_material_sign_column_background = 'none'
 colorscheme gruvbox-material
 set background=dark
 
+" jsx syntax highlighting
+" dark red
+hi tsxTagName guifg=#E06C75
+hi tsxComponentName guifg=#E06C75
+hi tsxCloseComponentName guifg=#E06C75
+
+" orange
+hi tsxCloseString guifg=#F99575
+hi tsxCloseTag guifg=#F99575
+hi tsxCloseTagName guifg=#F99575
+hi tsxAttributeBraces guifg=#F99575
+hi tsxEqual guifg=#F99575
+
+" yellow
+hi tsxAttrib guifg=#F8BD7F cterm=italic
+
 "FZF settings
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 let $FZF_DEFAULT_OPTS='--reverse'
@@ -112,57 +146,13 @@ let mapleader = "\<Space>"
 
 " make return and shift+return open  up new lines above and below respectively
 " without going into insert mode.
-nmap <C-o> O<Esc>
+" nmap <C-o> O<Esc>
 nmap <CR> o<Esc>
 
 " ------------------
-" Coc config begin
+" Coc config in ~/.config/nvim/plug-config/
 " ------------------
 "
-" let g:coc_global_extensions = [
-"   \ 'coc-snippets',
-"   \ 'coc-pairs',
-"   \ 'coc-tsserver',
-"   \ 'coc-eslint', 
-"   \ 'coc-prettier', 
-"   \ 'coc-json', 
-"   \ ]
-
-let g:coc_node_path = '/Users/calebsanderson/.asdf/shims/node'
-
-
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-" from COC readme https://github.com/neoclide/coc.nvim
-" if hidden is not set, TextEdit might fail.
-set hidden 
-
-" Some servers have issues with backup files, see #649 
-set nobackup 
-set nowritebackup 
-
-" Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
-set updatetime=300
-
-" don't give |ins-completion-menu| messages.
-set shortmess+=c
-
-" always show signcolumns
-set signcolumn=yes
-
-" ------------------
-" Coc config end
-" ------------------
-
 " `gc` comments out a selection
 
 " " Coc-rename

@@ -1,9 +1,16 @@
 #===============================================================================
-#                / _|                   | |
-#            ___| |_ ___  __ _ _ __   __| | ___ _ __ ___  ___  _ __
-#           / __|  _/ __|/ _` | '_ \ / _` |/ _ \ '__/ __|/ _ \| '_ \
-#          | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | |
-#           \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
+#                 ____                     __                         
+#           _____/ __/________ _____  ____/ /__  ______________  ____ 
+#          / ___/ /_/ ___/ __ `/ __ \/ __  / _ \/ ___/ ___/ __ \/ __ \
+#         / /__/ __(__  ) /_/ / / / / /_/ /  __/ /  (__  ) /_/ / / / /
+#         \___/_/ /____/\__,_/_/ /_/\__,_/\___/_/  /____/\____/_/ /_/ 
+#                                                                     
+#                                    __             
+#                        ____  _____/ /_  __________
+#                       /_  / / ___/ __ \/ ___/ ___/
+#                        / /_(__  ) / / / /  / /__  
+#                       /___/____/_/ /_/_/   \___/  
+#                       
 #===============================================================================
 
 export PATH="/usr/local/sbin:$PATH"
@@ -39,13 +46,16 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 alias bbd='brew bundle dump -f'
+alias brave='open -a "Brave Browser"'
 alias c='clear'
+alias chrome='open -a "Google Chrome"'
 alias conf='/usr/bin/git --git-dir=/Users/calebsanderson/.cfg-dotfiles/ --work-tree=/Users/calebsanderson'
 alias confstat='conf status'
 alias conflog='conf log'
 alias confloga='conf log --oneline --decorate --graph --all'
-alias home='~ && ls -la'
+alias firefox='open -a "Firefox"'
 alias gs='git switch'
+alias home='~ && ls -la'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias l='ls -la'

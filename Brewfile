@@ -44,7 +44,9 @@ brew "nmap"
 brew "perl"
 brew "protobuf-c"
 brew "postgis"
+brew "python@3.9", link: false
 brew "redis"
+brew "ripgrep"
 brew "ruby-build"
 brew "speedtest-cli"
 brew "tidy-html5"
@@ -74,6 +76,7 @@ mas "Flow", id: 1423210932
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
 mas "Kindle", id: 405399194
+mas "NordVPN IKE", id: 1116599239
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494

@@ -1,4 +1,4 @@
-alias cfg='/usr/bin/git --git-dir=$HOME/.cfg-dotfiles/ --work-tree=$HOME'
+alias conf='/usr/bin/git --git-dir=$HOME/.cfg-dotfiles/ --work-tree=$HOME'
 echo ".cfg-dotfiles" >> .gitignore
 
 echo ""

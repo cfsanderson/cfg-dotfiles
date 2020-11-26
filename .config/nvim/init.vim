@@ -152,7 +152,8 @@ nmap <CR> o<Esc>
 " ------------------
 " Coc config in ~/.config/nvim/plug-config/
 " ------------------
-"
+let g:UltiSnipsExpandTrigger = "<nop>"
+
 " `gc` comments out a selection
 
 " " Coc-rename

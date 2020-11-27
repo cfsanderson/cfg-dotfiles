@@ -60,6 +60,12 @@ alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false &
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias l='ls -la'
 alias lsl='ls -l'
+alias mkcdir=mkdir_cd
+mkdir_cd() {
+    mkdir -p -- "$1" &&
+    cd -P -- "$1" &&
+    ls -la
+}
 alias mybucket='open https://bitbucket.org/calebsanderson/'
 alias myhub='open https://github.com/cfsanderson'
 alias notes='cd ~/Projects/.notes && nvim .'

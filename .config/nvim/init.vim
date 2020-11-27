@@ -150,9 +150,9 @@ nmap <CR> o<Esc>
 " ------------------
 "
 " Use <C-l> for trigger snippet expand.
-imap <C-l> <Plug>(coc-snippets-expand)
+" imap <C-l> <Plug>(coc-snippets-expand)
 
-let g:UltiSnipsExpandTrigger = "<nop>"
+" let g:UltiSnipsExpandTrigger = '<nop>'
 
 " `gc` comments out a selection
 

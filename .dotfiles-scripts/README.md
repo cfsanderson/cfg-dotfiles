@@ -16,8 +16,8 @@ These install scripts are daisy-chained together using `bit.do` shortened urls t
 
 7. [http://bit.do/cfsanderson-oh-my-zsh](https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.dotfiles-scripts/oh-my-zsh-install-script.sh) - Installs oh-my-zsh. This will probably backup existing .zshrc file and will need to delete new and return backup to original name.
 
-8. [http://bit.do/cfsanderson-powerline](https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.dotfiles-scripts/powerline-install-script.sh) - Installs the Powerline fonts (Cousine).
+8. [http://bit.do/cfsanderson-powerline](https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.dotfiles-scripts/powerline-install-script.sh) - Installs the Powerline fonts.
 
-9. [http://bit.do/cfsanderson-npm](https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.dotfiles-scripts/npm-install-script.sh) - Installs any npm packages (like nodemon and trash CLI).
+9. [http://bit.do/cfsanderson-npm](https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.dotfiles-scripts/npm-install-script.sh) - Installs any npm packages (nodemon, trash-cli, and Gatsby).
 
-10. [http://bit.do/cfsanderson-ssh](https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.dotfiles-scripts/ssh-install-script.sh) - Generates new SSH keys and give instructions for how to sync with Github.
+10. [http://bit.do/cfsanderson-ssh](https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.dotfiles-scripts/ssh-install-script.sh) - Generates new SSH keys and give instructions for how to sync with Github. [ssh.com](https://www.ssh.com/ssh/keygen/).

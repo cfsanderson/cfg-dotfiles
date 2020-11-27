@@ -1,5 +1,6 @@
 npm install --global trash-cli
 npm install -g nodemon
+npm install -g gatsby-cli
 
 echo ""
 echo ""

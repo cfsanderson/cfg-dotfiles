@@ -1,0 +1,17 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "scss",
+    "markdown",
+    "javascript",
+    "html",
+    "yaml",
+    "json",
+    "python",
+    "typescript"
+  ],
+  "eslint.autoFixOnSave": true,
+  "markdownlint.config": {
+    "line_length": false
+  }
+}

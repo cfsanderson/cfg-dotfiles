@@ -1,6 +1,6 @@
-git clone --bare https://github.com/cfsanderson/cfg-dotfiles.git $HOME/.cfg-dotfiles
+git clone --bare https://github.com/cfsanderson/cfs-dotfiles.git $HOME/.cfs-dotfiles
 
-function cfg {
+function cfs {
    /usr/bin/git --git-dir=$HOME/.cfg-dotfiles/ --work-tree=$HOME $@
    echo "===== cfg function has run ====="
 }

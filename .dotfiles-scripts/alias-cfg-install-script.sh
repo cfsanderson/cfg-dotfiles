@@ -1,8 +1,8 @@
-alias conf='/usr/bin/git --git-dir=$HOME/.cfg-dotfiles/ --work-tree=$HOME'
-echo ".cfg-dotfiles" >> .gitignore
+alias conf='/usr/bin/git --git-dir=$HOME/.cfs-dotfiles/ --work-tree=$HOME'
+echo ".cfs-dotfiles" >> .gitignore
 
 echo ""
 echo ""
 echo ""
-echo "===== Next: Clone cfg-dotfiles repo? ====="
+echo "===== Next: Clone cfs-dotfiles repo? ====="
 echo "===== curl -Lks http://bit.do/cfsanderson-cfg-clone | bash ====="

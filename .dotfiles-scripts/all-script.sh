@@ -8,50 +8,41 @@ echo "==  \ \__,_|\___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_| =="
 echo "==   \____/                                                           =="
 echo "==                                                                    =="
 echo "==========          Ready to install some dotfiles?           =========="
-echo "============   https://github.com/cfsanderson/cfg-dotfiles  ============"
-echo "======      curl -Lks http://bit.do/cfsanderson-xcode | bash      ======"
+echo "============   https://github.com/cfsanderson/cfs-dotfiles  ============"
+echo "======      curl -Lks http://bit.do/cfsanderson-xcode | zsh       ======"
 echo "========================================================================"
 
 xcode-select --install
 
 echo "=====                 xcode-select installed                 ====="
-echo ""
-echo ""
-echo ""
 echo "=====  Install cfg-dotfiles alias and begin dotfiles setup?  ====="
-echo "=====  curl -Lks http://bit.do/cfsanderson-cfg-alias | bash  ====="
+echo "=====  curl -Lks http://bit.do/cfsanderson-cfg-alias | zsh  ====="
 
-alias conf='/usr/bin/git --git-dir=$HOME/.cfg-dotfiles/ --work-tree=$HOME'
-echo ".cfg-dotfiles" >> .gitignore
-echo ""
-echo ""
-echo ""
+alias conf='/usr/bin/git --git-dir=$HOME/.cfs-dotfiles/ --work-tree=$HOME'
+echo ".cfs-dotfiles" >> .gitignore
 echo "===== Next: Clone cfg-dotfiles repo? ====="
-echo "===== curl -Lks http://bit.do/cfsanderson-cfg-clone | bash ====="
+echo "===== curl -Lks http://bit.do/cfsanderson-cfg-clone | zsh ====="
 
-git clone --bare https://github.com/cfsanderson/cfg-dotfiles.git $HOME/.cfg-dotfiles
+git clone --bare https://github.com/cfsanderson/cfs-dotfiles.git $HOME/.cfs-dotfiles
 
-function cfg {
-   /usr/bin/git --git-dir=$HOME/.cfg-dotfiles/ --work-tree=$HOME $@
-   echo "===== cfg function has run ====="
+function cfs {
+   /usr/bin/git --git-dir=$HOME/.cfs-dotfiles/ --work-tree=$HOME $@
+   echo "===== cfs function has run ====="
 }
 
-mkdir -p .cfg-backup
-cfg checkout
+mkdir -p .cfs-backup
+cfs checkout
 if [ $? = 0 ]; then
-  echo "===== checked out cfg =====";
+  echo "===== checked out cfs =====";
   else
     echo "===== backing up pre-existing dot files =====";
-    cfg checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .cfg-backup/{}
+    cfs checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .cfs-backup/{}
 fi;
-cfg checkout
-cfg config status.showUntrackedFiles no
+cfs checkout
+cfs config status.showUntrackedFiles no
 
-echo ""
-echo ""
-echo ""
 echo "=====      Next: Install Homebrew and 'brew bundle'?      ====="
-echo "===== curl -Lks http://bit.do/cfsanderson-homebrew | bash ====="
+echo "===== curl -Lks http://bit.do/cfsanderson-homebrew | zsh ====="
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -59,65 +50,37 @@ echo "===== Installing all Brewfile dependencies ====="
 
 brew bundle
 
-echo ""
-echo ""
-echo ""
-echo "=====          Next: Make ZSH default shell?         ====="
-
-echo "===== curl -Lks http://bit.do/cfsanderson-zsh | bash ====="
-
-zsh --version
-echo "Expected result: 'zsh 4.3.9' or more recent"
-echo $SHELL
-echo "confirm expected result: '/bin/zsh' or similar"
-
-# make ZSH the default shell
-chsh -s $(which zsh)
-
-echo "=====  Switch to iTerm2 (or source) to use default shell.  ====="
 echo "=====               Next: Install Oh-My-Zsh?               ====="
-echo "===== curl -Lks http://bit.do/cfsanderson-oh-my-zsh | bash ====="
+echo "===== curl -Lks http://bit.do/cfsanderson-oh-my-zsh | zsh ====="
 
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "=====                       WARNING:                       ====="
 echo "=====     this may have backed up the existing .zshrc      ====="
 echo "=====    to .zshrc.pre-oh-my-zsh. Change it back if so.    ====="
 echo "=====          Next Step: Install Powerline fonts          ====="
-echo "===== curl -Lks http://bit.do/cfsanderson-powerline | bash ====="
+echo "===== curl -Lks http://bit.do/cfsanderson-powerline | zsh ====="
 
-git clone https://github.com/powerline/fonts.git
+git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 ./install.sh
 cd ..
 rm -rf fonts
 
-echo ""
-echo ""
-echo ""
 echo "===== Next: install global NPM packages              ====="
-echo "===== curl -Lks http://bit.do/cfsanderson-nvm | bash ====="
+echo "===== curl -Lks http://bit.do/cfsanderson-nvm | zsh ====="
 
 npm install --global trash-cli
 npm install -g nodemon
 npm install -g gatsby-cli
 
-echo ""
-echo ""
-echo ""
 echo "===== Next Step: generate SSH keys       ====="
 echo "===== curl http://bit.do/cfsanderson-ssh ====="
 
 # generate new keys
-echo ""
-echo ""
-echo ""
 echo "===== after keygen, press enter to leave in default folder ====="
 echo "===== go to 'GitHub > settings > SSH and GPG keys' and delete old SSH key and click on 'New SSH Key' button. ====="
 echo "===== 'pbcopy < ~/.ssh/id_rsa.pub' to copy the contents of rsa.pub and paste into Github ====="
-echo ""
-echo ""
-echo ""
 echo "===== Next: Fix all those settings! ====="
 
 ssh-keygen -t rsa -b 4096 -C "calebsanderson@icloud.com"
